@@ -1,5 +1,5 @@
 import ReactDom from "react-dom";
-import Accordian from "../index";
+import Accordian from "../../index";
 import React from "react";
 
 import './main.scss';
