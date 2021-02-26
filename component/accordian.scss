@@ -1,0 +1,42 @@
+$accordian_grey: #ccc !default;
+$accordian_white: #ffffff !default;
+$accordian_grey_fa: #f1f9fe !default;
+
+
+:root{
+    --pntr: pointer
+}
+.accordian{
+    position: relative;
+    list-style-type: none;
+    font-size: 16px;
+    text-align: left;
+    background: $accordian_white;
+    &__title{
+        font-weight: 700;
+        line-height: 30px;
+        padding: 10px 20px;
+        cursor: var(--pntr);
+    }
+    &-open{
+        background-color: $accordian_grey_fa;
+    }
+    &__view{
+        padding: 10px 20px 10px 40px;
+    }
+    &-arrow {
+        position: absolute;
+        font-size: 23px;
+        width: 20px;
+        height: 20px;
+        right: 7px;
+        top: 15px;
+        color: $accordian_grey;
+        transform: scaleY(0.5);
+        cursor: var(--pntr);
+      }
+    &-arrowUp{
+        transform: scaleY(-0.5);
+      }
+    
+}

@@ -1,0 +1,48 @@
+.header{
+  width: 100%;
+  font-size: 30px;
+  font-weight: 700;
+  // background-color: pink;
+  padding: 10px;
+}
+.body{
+  display: flex;
+  min-height: 700px;
+  .menu{
+    // width: 20%;
+    padding: 20px 0px;
+    border-right: 1px solid #dedede;
+    .menu__hamburger{
+      padding: 10px;
+      div{
+        width: 20px;
+        height: 2px;
+      background-color: grey;
+      margin: 3px 0;
+      }
+    }
+    .navigations{
+      width: 250px;
+      .menu__links{
+        padding: 10px 20px 10px 40px;
+        font-size: 14px;
+        display: block;
+      }
+    }
+    
+  }
+  .main{
+    width: 80%;
+    
+  }
+  
+}
+.al-end{
+  text-align: end;
+}
+.p5{
+  padding: 5px;
+}
+.pntr{
+  cursor: pointer;
+}
