@@ -7,6 +7,13 @@
     "test": "ut",
     "start": "devServer"
   },
+  "keywords": [
+    "npm",
+    "accordion",
+    "React-accordion",
+    "React-collapsible",
+    "React-custom-accordion"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/aliusmaaan/accordian.git"
