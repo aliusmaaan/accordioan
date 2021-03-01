@@ -1,6 +1,6 @@
-import Accordian from './component/accordian';
-import AccordianGroup from './component/accordianGroup';
+import Accordion from './component/accordion';
+import AccordionGroup from './component/accordionGroup';
 export  {
-    Accordian,
-    AccordianGroup
+    Accordion,
+    AccordionGroup
 };

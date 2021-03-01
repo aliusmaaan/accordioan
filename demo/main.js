@@ -1,5 +1,5 @@
 import ReactDom from "react-dom";
-import { Accordian, AccordianGroup } from "../index";
+import { Accordion, AccordionGroup } from "../index";
 // import Accordian from "../index";
 import React from "react";
 
@@ -52,38 +52,38 @@ export class Component extends React.PureComponent {
                             (<div className='navigations'>
                                 <div className='al-end p5 pntr' onClick={this.toggleMenu}>&#10005;</div>
                                 <h3>Controlled</h3>
-                                <Accordian title='Requirment' open={accOpen} controlled clickHandler={this.toggleAccordians}>
-                                    <Accordian.View>
+                                <Accordion title='Requirment' open={accOpen} controlled clickHandler={this.toggleAccordians}>
+                                    <Accordion.View>
                                         <a className='menu__links'>Requirment Detail</a>
                                         <a className='menu__links'>Requirment Creation & Closure</a>
                                         <a className='menu__links'>Requirment Aging</a>
                                         <a className='menu__links'>Requirment Funnel</a>
                                         <a className='menu__links'>Requirment Tat</a>
                                         <a className='menu__links'>Requirment Tat - stage level TAT</a>
-                                    </Accordian.View>
+                                    </Accordion.View>
 
-                                </Accordian>
+                                </Accordion>
                                 <h3></h3>
-                                <Accordian title='Recruiter' open={accOpen}>
-                                    <Accordian.View>
+                                <Accordion title='Recruiter' open={accOpen}>
+                                    <Accordion.View>
                                         <a className='menu__links'>Recruiter Detail</a>
                                         <a className='menu__links'>Recruiter Creation & Closure</a>
                                         <a className='menu__links'>Recruiter Aging</a>
                                         <a className='menu__links'>Recruiter Funnel</a>
                                         <a className='menu__links'>Recruiter Tat</a>
                                         <a className='menu__links'>Recruiter Tat - stage level TAT</a>
-                                    </Accordian.View>
-                                </Accordian>
-                                <Accordian title='default' open={accOpen}>
-                                    <Accordian.Item>
+                                    </Accordion.View>
+                                </Accordion>
+                                <Accordion title='default' open={accOpen}>
+                                    <Accordion.Item>
                                         Item
-                                    </Accordian.Item>
-                                </Accordian>
+                                    </Accordion.Item>
+                                </Accordion>
 
-                                <h3>Accordian Group</h3>
-                                <AccordianGroup data={accrdnList} key='1' />
-                                <h3>Accordian Group controlled</h3>
-                                <AccordianGroup key='2' data={accrdnList} clickHandler={this.handleMultipleAccrdns} controlled={true} />
+                                <h3>Accordion Group</h3>
+                                <AccordionGroup data={accrdnList} key='1' />
+                                <h3>Accordion Group controlled</h3>
+                                <AccordionGroup key='2' data={accrdnList} clickHandler={this.handleMultipleAccrdns} controlled={true} />
 
                                 <h3 onClick={this.resetMultipleAccrdns}>Reset group</h3>
                             </div>)}

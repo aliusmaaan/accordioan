@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import './accordian.scss';
-class Accordian extends PureComponent {
+class Accordion extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {
@@ -8,18 +8,36 @@ class Accordian extends PureComponent {
         };
     }
 
+    static getDerivedStateFromProps({ open: propOpen, controlled }, { open: stateOpen },) {
+        if (controlled && propOpen !== stateOpen) {
+            return {
+                open: propOpen
+            }
+        }
+        return null
+    }
+
     toggleOption = () => {
         const { open } = this.state;
         this.setState({ open: !open });
     }
 
+    handleClick = () => {
+        const { id, open, title, controlled, clickHandler } = this.props;
+        if (controlled) {
+            clickHandler({ id, title, open });
+        } else {
+            this.toggleOption();
+        }
+    }
+
     render() {
-        // console.log(this.props.options);
-        const { title, children } = this.props;
         const { open } = this.state;
+        const { title, children } = this.props;
+
         return (
             <li className='accordian'>
-                <Title open={open} onClick={this.toggleOption}>
+                <Title open={open} onClick={this.handleClick}>
                     {title}
                     <span className={`accordian-arrow ${open ? 'accordian-arrowDown' : 'accordian-arrowUp'}`}>˅</span>
                 </Title>
@@ -48,17 +66,17 @@ const View = ({ children }) => {
     );
 }
 
-const Item = ({children}) => {
-    return(
+const Item = ({ children }) => {
+    return (
         <div className='accordian__view'>
             {children}
         </div>
     )
 }
 
-Accordian.Title = Title;
-Accordian.View = View;
-Accordian.Item = Item;
+Accordion.Title = Title;
+Accordion.View = View;
+Accordion.Item = Item;
 
 
-export default Accordian;
+export default Accordion;

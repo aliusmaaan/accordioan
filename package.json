@@ -1,7 +1,7 @@
 {
-  "name": "@static_common/accordian",
+  "name": "react-accordion",
   "version": "1.0.0",
-  "description": "",
+  "description": "React based accordion/collapsible",
   "main": "index.js",
   "scripts": {
     "test": "ut",
@@ -9,12 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://gitlab.infoedge.com/static_common/accordian.git"
+    "url": "https://github.com/aliusmaaan/accordian.git"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "build-setup": "git+http://gitdeployer:gitdeployer@gitlab.infoedge.com/static_common/build-setup.git#master",
     "@babel/core": "^7.4.5",
     "@babel/helpers": "^7.4.4",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
