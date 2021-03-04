@@ -6,7 +6,7 @@ import { Accordion, AccordionGroup } from "../component/index";
 import React from "react";
 
 import './main.scss';
-import { data } from "./data";
+import { data } from "../component/__tests__/data";
 export class Component extends React.PureComponent {
     state = { menuOpen: false, accOpen: true, accrdnList: data }
 
