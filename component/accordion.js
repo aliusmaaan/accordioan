@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import './accordian.scss';
+
 class Accordion extends PureComponent {
     constructor(props) {
         super(props);

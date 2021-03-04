@@ -1,28 +1,25 @@
-$accordian_grey: #ccc !default;
-$accordian_white: #ffffff !default;
-$accordian_grey_fa: #f1f9fe !default;
+$accordian_text: #ccc !default;
+$accordian_backgroud: #ffffff !default;
+$accordian_active: #f1f9fe !default;
+$accordian_view-padding : 10px 20px 10px 40px !default;
 
-
-:root{
-    --pntr: pointer
-}
 .accordian{
     position: relative;
     list-style-type: none;
     font-size: 16px;
     text-align: left;
-    background: $accordian_white;
+    background: $accordian_backgroud;
     &__title{
         font-weight: 700;
         line-height: 30px;
         padding: 10px 20px;
-        cursor: var(--pntr);
+        cursor: pointer;
     }
     &-open{
-        background-color: $accordian_grey_fa;
+        background-color: $accordian_active;
     }
     &__view{
-        padding: 10px 20px 10px 40px;
+        padding: $accordian_view-padding;
     }
     &-arrow {
         position: absolute;
@@ -31,9 +28,9 @@ $accordian_grey_fa: #f1f9fe !default;
         height: 20px;
         right: 7px;
         top: 15px;
-        color: $accordian_grey;
+        color: $accordian_text;
         transform: scaleY(0.5);
-        cursor: var(--pntr);
+        cursor: pointer;
       }
     &-arrowUp{
         transform: scaleY(-0.5);

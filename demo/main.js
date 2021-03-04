@@ -1,5 +1,7 @@
 import ReactDom from "react-dom";
-import { Accordion, AccordionGroup } from "../index";
+import { Accordion, AccordionGroup } from "../component/index";
+// import Accordion from "../component/accordion";
+// import AccordionGroup from "../component/accordionGroup";
 // import Accordian from "../index";
 import React from "react";
 
